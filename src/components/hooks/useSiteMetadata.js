@@ -1,4 +1,3 @@
-import React from 'react';
 import { graphql, useStaticQuery } from "gatsby";
 
 const useSiteMetadata = () => {
@@ -10,8 +9,8 @@ const useSiteMetadata = () => {
         }
       }
     }
-  `)
-  return data.site.siteMetadata
+  `);
+  return data.site.siteMetadata;
 };
 
 export default useSiteMetadata;
